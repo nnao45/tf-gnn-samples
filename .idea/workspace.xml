@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="89616719-fd0e-4cff-886e-c32b9303bb34" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/notebook/data/qm9/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notebook/data/qm9/test.jsonl.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notebook/data/qm9/train.jsonl.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notebook/data/qm9/valid.jsonl.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notebook/test01.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gnns/rgat.py" beforeDir="false" afterPath="$PROJECT_DIR$/gnns/rgat.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/sparse_graph_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/sparse_graph_model.py" afterDir="false" />
-    </list>
+    <list default="true" id="89616719-fd0e-4cff-886e-c32b9303bb34" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
