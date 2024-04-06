@@ -1,6 +1,7 @@
 from typing import Optional, Callable, Union, List
 
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 
 
 BIG_NUMBER = 1e7

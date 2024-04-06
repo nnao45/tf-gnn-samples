@@ -5,7 +5,8 @@ import time
 from abc import ABC, abstractmethod
 from typing import Any, Dict, Optional, Tuple, List, Iterable
 
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 import numpy as np
 from dpu_utils.utils import ThreadedIterator, RichPath
 
@@ -65,7 +66,7 @@ class Sparse_Graph_Model(ABC):
         # Build the actual model
         random.seed(params['random_seed'])
         np.random.seed(params['random_seed'])
-        config = tf.ConfigProto()
+        config = tf.compat.v1.ConfigProto()
         config.gpu_options.allow_growth = True
         self.graph = tf.Graph()
         self.sess = tf.Session(graph=self.graph, config=config)
@@ -131,9 +132,9 @@ class Sparse_Graph_Model(ABC):
 
         with tf.variable_scope("graph_model"):
             self.__placeholders['num_graphs'] = \
-                tf.placeholder(dtype=tf.int64, shape=[], name='num_graphs')
+                tf.compat.v1.placeholder(dtype=tf.int64, shape=[], name='num_graphs')
             self.__placeholders['graph_layer_input_dropout_keep_prob'] = \
-                tf.placeholder_with_default(1.0, shape=[], name='graph_layer_input_dropout_keep_prob')
+                tf.compat.v1.placeholder_with_default(1.0, shape=[], name='graph_layer_input_dropout_keep_prob')
 
             self.__build_graph_propagation_model()
 

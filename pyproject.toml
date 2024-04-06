@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "tf-gnn-samples"
+version = "0.1.0"
+description = ""
+authors = ["nnao45 <n4sekai5y@gmail.com>"]
+readme = "README.md"
+packages = [{include = "tf_gnn_samples"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+scipy = ">=0.19.0"
+numpy = ">=1.11.0"
+scikit-learn = ">=0.19.1"
+xgboost = ">=0.80"
+tensorflow = ">=1.1.0"
+tslearn = ">=0.1.24"
+jupyter = "^1.0.0"
+ipykernel = "^6.29.3"
+bash-kernel = "^0.9.3"
+joblib = "^1.3.2"
+tensorrt = {version = "^8.6.1.post1", source = "nvidia"}
+tensorrt-libs = {version = "^8.6.1", source = "nvidia"}
+tensorrt-bindings = {version = "^8.6.1", source = "nvidia"}
+matplotlib = "^3.8.3"
+more-itertools = "^10.2.0"
+dpu-utils = "^0.6.1"
+
+
+[[tool.poetry.source]]
+name = "nvidia"
+url = "https://pypi.nvidia.com/"
+default = false
+secondary = false
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

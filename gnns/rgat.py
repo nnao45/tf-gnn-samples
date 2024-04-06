@@ -1,7 +1,7 @@
 from typing import List, Optional
 
 import tensorflow as tf
-from dpu_utils.tfutils import unsorted_segment_log_softmax
+from dpu_utils.tf2utils import unsorted_segment_log_softmax
 
 from utils import get_activation
 
